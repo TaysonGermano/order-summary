@@ -1,1 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url(/images/pattern-background-desktop.svg) no-repeat,
+    hsl(225, 100%, 94%);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: bolder;
+  color: hsl(223, 47%, 23%);
+}
+
+.main {
+  background-color: #fff;
+  width: 335px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero img {
+  border-radius: 20px 20px 0px 0px;
+  width: 335px;
+}
+
+.main p,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 5%;
+}
+
+.content,
+.price,
+.submition {
+  margin: 5% 0;
+}
+
+.price,
+.submition {
+  display: flex;
+  justify-content: center;
+}
+
+.price section {
+  display: flex;
+  width: 80%;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.price section p {
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.price section a {
+  margin-top: 5%;
+}
+
+.submition section {
+  display: flex;
+  flex-direction: column;
+}
+
+.submition button:last-child {
+  margin-top: 10px;
+  color: hsl(224, 23%, 55%);
+  border: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.submition button:first-child {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: #fff;
+  padding: 10px 80px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:first-child:hover {
+  background-color: hsl(245, 75%, 60%);
+}
+
+button:last-child:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* desktop media */
+@media screen and (max-width: 375px) {
+  body {
+    background: url(/images/pattern-background-mobile.svg) no-repeat,
+      hsl(225, 100%, 94%);
+  }
+}
