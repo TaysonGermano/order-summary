@@ -21,7 +21,7 @@ body {
   color: hsl(223, 47%, 23%);
 }
 
-.main {
+main {
   background-color: #fff;
   width: 335px;
   border-radius: 20px;
@@ -35,7 +35,7 @@ body {
   width: 335px;
 }
 
-.main p,
+main p,
 h1 {
   text-align: center;
 }
