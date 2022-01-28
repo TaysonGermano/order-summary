@@ -1,4 +1,2 @@
 # order-summary
-HTML and CSS
-
-This project is for practice purpose only
+Just a simple Order summary card component to practice my CSS skills
